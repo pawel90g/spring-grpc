@@ -15,7 +15,7 @@
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>17</java.version>
-		<proto-proj.version>0.0.1-SNAPSHOT</proto-proj.version>
+		<protoproj.version>0.0.1-SNAPSHOT</protoproj.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -32,9 +32,21 @@
 		<dependency>
 			<groupId>dev.garbacik</groupId>
 			<artifactId>proto</artifactId>
-			<version>${proto-proj.version.version}</version>
+			<version>${protoproj.version}</version>
 		</dependency>
 	</dependencies>
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-dependencies</artifactId>
+				<type>pom</type>
+				<version>2.7.16</version>
+				<scope>import</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
 
 	<build>
 		<plugins>

@@ -8,11 +8,17 @@
             "type": "java",
             "name": "Client",
             "request": "launch",
-            "cwd": "${workspaceFolder}",
+            "cwd": "${workspaceFolder}/client",
             "mainClass": "dev.garbacik.client.ClientApplication",
-            "projectName": "grpcdemo",
             "args": "",
-            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Server",
+            "request": "launch",
+            "cwd": "${workspaceFolder}/server",
+            "mainClass": "dev.garbacik.server.ServerApplication",
+            "args": "",
         }
     ]
 }
