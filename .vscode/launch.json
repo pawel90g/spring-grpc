@@ -6,11 +6,18 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ProtoApplication",
+            "request": "launch",
+            "mainClass": "dev.garbacik.proto.ProtoApplication",
+            "projectName": "proto"
+        },
+        {
+            "type": "java",
             "name": "Client",
             "request": "launch",
             "cwd": "${workspaceFolder}/client",
             "mainClass": "dev.garbacik.client.ClientApplication",
-            "args": "",
+            "args": ""
         },
         {
             "type": "java",
@@ -18,7 +25,7 @@
             "request": "launch",
             "cwd": "${workspaceFolder}/server",
             "mainClass": "dev.garbacik.server.ServerApplication",
-            "args": "",
+            "args": ""
         }
     ]
 }
